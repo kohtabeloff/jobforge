@@ -1,0 +1,93 @@
+# Personal data (user fills these)
+cv.md
+data/applications.md
+data/applications.db
+data/pipeline.md
+data/scan-history.tsv
+data/parser-output/**/*.json
+!data/parser-output/.gitkeep
+!data/parser-output/**/.gitkeep
+data/cache/ats-companies/
+reports/*.md
+!reports/.gitkeep
+output/*
+!output/.gitkeep
+batch/logs/*
+!batch/logs/.gitkeep
+batch/batch-state.tsv
+batch/batch-input.tsv
+batch/tracker-additions/**/*.tsv
+!batch/tracker-additions/.gitkeep
+jds/*
+!jds/.gitkeep
+
+# Interview prep (accumulated STAR+R stories — user data)
+interview-prep/*
+!interview-prep/.gitkeep
+
+# Writing samples (user's personal files — never committed)
+writing-samples/*
+!writing-samples/README.md
+
+# User config and customization (never auto-updated)
+config/profile.yml
+portals.yml
+modes/_profile.md
+.update-dismissed
+.update-lock
+
+# Secrets (never commit — use .env.example as template)
+.env
+# Universal safety net — protects ALL checkouts/branches, incl. untracked subprojects
+# (e.g. web/ before it graduates to main). Never commit local env files or TS build caches.
+**/.env.local
+**/.env*.local
+**/*.tsbuildinfo
+
+# Generated
+.resolved-prompt-*
+node_modules/
+bun.lock
+# Report-number reservation sentinels (ephemeral, created by reserve-report-num.mjs)
+reports/*-RESERVED.md
+
+# Backup files written by normalize-statuses.mjs / dedup-tracker.mjs
+*.bak
+
+# OS
+.DS_Store
+*.mov
+*.mp4
+
+# CLI-specific local config
+.claude/settings.local.json
+.claude/memory/
+.opencode/settings.local.json
+.opencode/memory/
+career-dashboard
+package-lock.json
+
+# Playwright MCP server run artifacts (ephemeral, machine-local — never commit)
+.playwright-mcp/
+
+# Planning (local scratchpad)
+plan/
+
+# JobForge
+.venv/
+sources/__pycache__/
+
+# --- JobForge: личные данные пользователя и рантайм (НЕ коммитить) ---
+.venv/
+node_modules/
+cv.md
+config/profile.yml
+modes/_profile.md
+voice-dna.md
+writing-samples/
+portals.yml
+data/
+output/
+reports/
+applications/
+sources/__pycache__/
