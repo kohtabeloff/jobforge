@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.14.0](https://github.com/kohtabeloff/jobforge/compare/career-ops-v1.13.0...career-ops-v1.14.0) (2026-06-29)
+
+
+### Features
+
+* парсинг резюме из PDF/Word (markitdown) + стелс-фетч страниц (curl_cffi) ([b676c34](https://github.com/kohtabeloff/jobforge/commit/b676c3494e231ebc6bcce20b222d472ad17371d0))
+* язык материалов и оценки = язык вакансии (RU/EN авто) ([3245b2d](https://github.com/kohtabeloff/jobforge/commit/3245b2dece8818d3a2b9b5c2cbfa6496a2e7d0fb))
+
 ## [1.13.0](https://github.com/santifer/career-ops/compare/career-ops-v1.12.0...career-ops-v1.13.0) (2026-06-25)
 
 
