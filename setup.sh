@@ -26,7 +26,8 @@ if [ -n "$PY" ]; then
   echo "2/4 ⏳ Python-окружение (JobSpy)..."
   "$PY" -m venv .venv
   ./.venv/bin/pip install -q --upgrade pip
-  ./.venv/bin/pip install -q python-jobspy
+  # python-jobspy — поиск; markitdown — парсинг резюме PDF/Word; curl_cffi — стелс-фетч страниц
+  ./.venv/bin/pip install -q python-jobspy "markitdown[pdf,docx]" curl_cffi
 else
   echo "2/4 ⏭  Пропускаю JobSpy (нет Python 3.10+)"
 fi
